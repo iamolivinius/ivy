@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ivy</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/ivy.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=RobotoDraft:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en">
+  </head>
+  <body>
+    <script>
+      window.IvyENV = {{ENV}};
+      window.EmberENV = window.IvyENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/ivy.js"></script>
+    <script>
+      window.Ivy = require('ivy/app')['default'].create(IvyENV.APP);
+    </script>
+  </body>
+</html>

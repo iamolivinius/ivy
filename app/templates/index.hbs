@@ -1,0 +1,12 @@
+<button {{action 'createWorkspace'}}>Create Workspace</button>
+<button {{action 'createWorkspace'}}>Delete Workspace</button>
+
+<br>
+
+{{partial "workspaces/new"}}
+
+<ul>
+{{#each workspace in model}}
+<li><input type="checkbox">{{workspace.name}}</li>
+{{/each}}
+</ul>
